@@ -14,7 +14,6 @@ const images = [
 ];
 
 const galleryListEl = document.querySelector(".gallery");
-console.log(galleryListEl);
 
 const makeGalleryCard = ({ url, alt }) =>
   `<li class="gallery-item"><img class="gallery-img" src="${url}" alt="${alt}" /></li>`;
