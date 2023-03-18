@@ -1,5 +1,5 @@
-const input = document.querySelector("#name-input");
-const gretting = document.querySelector("#name-output");
+const inputEl = document.querySelector("#name-input");
+const grettingEl = document.querySelector("#name-output");
 
 input.addEventListener("input", (event) => {
   gretting.textContent = event.currentTarget.value;
