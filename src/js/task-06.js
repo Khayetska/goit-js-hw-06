@@ -4,7 +4,7 @@ inputEl.addEventListener("blur", validationAmountOfSymbols);
 
 const dataLength = Number(inputEl.getAttribute("data-length"));
 
-function validationAmountOfSymbols(event) {
+function handleValidationAmountOfSymbols(event) {
   if (event.target.value.length === dataLength) {
     event.target.classList.add("valid");
     event.target.classList.remove("invalid");
