@@ -8,8 +8,8 @@ const colorTextEl = document.querySelector(".color");
 const changeColorBtnEL = document.querySelector(".change-color");
 
 const handleColorChange = () => {
-  document.body.style.backgroundColor = getRandomHexColor();
   colorTextEl.textContent = getRandomHexColor();
+  document.body.style.backgroundColor = colorTextEl.textContent;
 };
 
 changeColorBtnEL.addEventListener("click", handleColorChange);
